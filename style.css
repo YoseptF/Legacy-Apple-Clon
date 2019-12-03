@@ -15,14 +15,15 @@ body {
   height: 100vh;
   max-width: 1440px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   min-width: 1440px;
-  background: red;
 }
 
 .hero {
   background: url(./images/your_verse_hero.jpg) 50% 100% no-repeat;
-  height: 70%;
+  min-height: 686px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -34,7 +35,7 @@ body {
   height: 36px;
   border-radius: 4px;
   max-width: 980px;
-  margin-top: -6.5%;
+  margin-top: -8.5%;
   background: rgba(166, 166, 166, 1);
   background: -moz-linear-gradient(top, rgba(166, 166, 166, 1) 0%, rgba(125, 125, 125, 1) 50%, rgba(94, 94, 94, 1) 51%, rgba(94, 94, 94, 1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(166, 166, 166, 1)), color-stop(50%, rgba(125, 125, 125, 1)), color-stop(51%, rgba(94, 94, 94, 1)), color-stop(100%, rgba(94, 94, 94, 1)));
@@ -62,8 +63,6 @@ ul {
 }
 
 .topNav li {
-  margin: 0;
-  padding: 0;
   display: table-cell;
   height: 36px;
   width: 186px;
@@ -74,6 +73,32 @@ ul {
   -ms-border-image: url(./images/base64.png) 0 2 0 1;
   -moz-border-image: url(./images/base64.png) 0 2 0 1;
   -webkit-border-image: url(./images/base64.png) 0 2 0 1;
+}
+
+.ads ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.ads li {
+  height: 100%;
+  width: 25%;
+  list-style-type: none;
+}
+
+.ads img {
+  width: 100%;
+  padding: 1px;
+}
+
+#Colorful {
+  background: url(./images/Forward.jpg) 50% 100% no-repeat;
+  background-size: cover;
+}
+
+.siteMap li {
+  list-style-type: none;
 }
 
 .topNav li:hover {
@@ -122,6 +147,30 @@ ul {
   background-position-y: -207px;
 }
 
+#Search {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-color: #767676;
+  color: white;
+  height: 25px;
+  padding: 2px 18px 1px 22px;
+  position: absolute;
+  border-radius: 12px;
+  top: 5px;
+  left: 2px;
+  max-width: 103px;
+}
+
+.searchBox {
+  position: relative;
+}
+
+.magnify {
+  position: absolute;
+  top: 13px;
+  left: 8px;
+  font-size: 0.8rem;
+}
+
 .heroText {
   width: 980px;
   margin-top: -6%;
@@ -154,4 +203,48 @@ ul {
 
 .heroClick:hover {
   background: url(./images/Line.png);
+}
+
+.ads {
+  width: 100%;
+  min-height: 200px;
+}
+
+footer {
+  width: 80%;
+  min-height: 88px;
+  display: flex;
+}
+
+.copy {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy p {
+  font-size: 0.8334em;
+  margin-bottom: 5px;
+}
+
+.siteMap {
+  width: 50%;
+}
+
+.siteMap ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.siteMap a {
+  text-decoration: none;
+  font-size: 0.8334em;
+  color: #08c;
+  padding-right: 3px;
+  border-right: solid 1px;
 }
